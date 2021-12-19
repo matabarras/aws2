@@ -8,4 +8,8 @@ $payload->ref;
 //Ejecutamos
 shell_exec('./deploy.sh');
 
+exec('./deploy.sh 2>&1', $output);
+
+print_r($output);
+
 ?>
